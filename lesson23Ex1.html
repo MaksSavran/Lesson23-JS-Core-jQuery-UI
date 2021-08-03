@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <title>Lesson23Ex1</title>
+
+</head>
+
+<body>
+
+  <div class="timerContainer">
+    <p class="timer">01:00</p>
+  </div>
+  <div class="buttonContainer">
+    <input type="button" id="start" value="Start game!">
+    <input type="button" id="checkResult" value="Check result" disabled>
+    <input type="button" id="reset" value="New game">
+  </div>
+  <div class="puzzleContainer">
+    <div id="startPuzzle" class="puzzlePiecesContainer"></div>
+    <div id="finishPuzzle" class="puzzlePiecesContainer">
+    </div>
+  </div>
+
+  <div class="darkBackground"></div>
+  <div id="modalWindow">
+    <hr>
+    <p class="modalMessage"></p>
+    <hr>
+    <input type="button" id="close" value="Close">
+    <input type="button" id="check" value="Check">
+  </div>
+
+
+  <script src="./script/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script/scriptEx1.js"></script>
+
+</body>
+
+</html>
