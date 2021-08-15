@@ -48,15 +48,18 @@ $(document).ready(function () {
         }
     }
     function addDrugDrop() {
-        $('.puzzlePiece').draggable();
+        $('.puzzlePiece').draggable({
+            revert: true
+        });
         $('.puzzleGrid').droppable({
             over: startGame,
             drop: function (event, ui) {
                 let draggableElement = ui.draggable;
                 let droppedPlace = $(this);
-                $(droppedPlace).addClass('placedPiece');
+
+                droppedPlace.addClass('placedPiece');
                 $(draggableElement).addClass('droppedPiece').css({
-                    top: 0,
+                    top: 0, 
                     left: 0,
                     position: 'relative'
                 }).appendTo(droppedPlace);
